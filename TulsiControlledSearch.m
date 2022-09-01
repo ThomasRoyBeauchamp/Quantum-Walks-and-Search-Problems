@@ -16,7 +16,7 @@ function [distributions,maxP,timeStepsToMax,targetDistribution] = TulsiControlle
 arguments
     N double {mustBeScalarOrEmpty,mustBeInteger,mustBePositive} = 101
     delta double  {mustBeReal,mustBeScalarOrEmpty} = acos(1/sqrt(log(N^2)))
-    maxTime double {mustBeNonnegativem mustBeScalarOrEmpty,mustBeInteger} = 1000;
+    maxTime double {mustBeNonnegative, mustBeScalarOrEmpty,mustBeInteger} = 1000;
     target (2,1) {mustBeInteger} = [40,80];
 end
 
