@@ -82,7 +82,7 @@ Y = pdf('binomial',0:200,200,p);
 plot(-200:2:200,Y,':','color','red','linewidth',4)
 hold on
 histogram(results,-timeSteps:timeSteps,'Normalization','pdf')
-
+xlim([-200,200]);
 xlabel('$S_{200}$',Interpreter='latex')
 ylabel('probability')
 title('B')
